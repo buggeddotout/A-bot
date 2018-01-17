@@ -1,0 +1,32 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.on('ready', () => {
+  console.log('I am Online!');
+});
+
+client.on('message', message => {
+  if (message.content === '.Bug') {
+    message.reply('I am Online!');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '.bug') {
+    message.reply('I am Online!');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '.help') {
+    message.reply('Check your Dms! also do -bug to check status of bot (online or offline) heres a link for supoort server!:https://discord.gg/5jsfq3D ');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '.Help') {
+    message.reply('USE LOWER CASE H exmp: .help also do -bug to check status of bot (online or offline) heres a link for supoort server!:https://discord.gg/5jsfq3D ');
+  }
+});
+
+client.login('NDAyOTUxMDY1MjczODkyODY1.DUAM-Q.NDbBQpe1NlxC0JQ4nAMv-c32nb8');
